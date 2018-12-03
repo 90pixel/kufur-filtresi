@@ -1,5 +1,6 @@
 ambiti
 amcık
+amck
 amık
 amını
 amına
@@ -38,7 +39,9 @@ orosbu
 orospu
 orusbu
 oruspu
+orsp
 pezevenk
+pzvnk
 puşt
 qavat
 sakso
@@ -56,6 +59,7 @@ sikiş
 sikle
 sikme
 siktir
+sktr
 siktiği
 sokarım
 sokayım
@@ -72,3 +76,4 @@ yalaka
 yarak
 yarağ
 yarra
+yrrk

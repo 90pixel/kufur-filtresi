@@ -37,6 +37,7 @@ func main() {
 	fmt.Println(text)
 }
 
+// readFile dosyayı okuyup geriye kelimeleri array string içinde dönüyor
 func readFile(filepath string) []string {
 	file, err := os.Open(filepath)
 	if err != nil {
@@ -54,13 +55,14 @@ func readFile(filepath string) []string {
 	return list
 }
 
-func check(regex string, v string, emoji string) {
+// check gönderilen kelimeye regex'i uygulayıp uyuşursa emojiyle uyuşan yeri değiştiriyor
+func check(regex string, word string, emoji string) {
 	r, err := regexp.Compile(regex)
 	if err != nil {
-		log.Print(fmt.Sprintf("[%s] bu kelime regex'i saglamiyor: %v", v, err))
+		log.Print(fmt.Sprintf("[%s] bu kelime regex'i saglamiyor: %v", word, err))
 		return
 	}
 	if r.MatchString(text) {
-		text = strings.Replace(text, v, emoji, 1)
+		text = strings.Replace(text, word, emoji, 1)
 	}
 }
